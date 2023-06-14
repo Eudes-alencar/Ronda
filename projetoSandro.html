@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ronda - Início</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+<h2>RONDA</h2>
+   <ul id="menu-h">
+    <li><a href="#">Início</a></li>
+    <li><a href="#">Automóveis</a></li>
+    <li><a href="#section-contato">Contato</a></li>
+    <li><a href="#">Sobre</a></li>
+    <li><a href="#"><i class="fa fa-user"></i>     Login</a></li>
+   </ul>
+
+   <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="motttoto.jfif" style="width:100%">
+        <div class="text"></div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="carrocross.jfif" style="width:100%">
+        <div class="text"></div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="bikecross.jfif" style="width:100%">
+        <div class="text"></div>
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <div class="frase">
+        <p>RONDA</p>
+        <P class="servs">SERVIÇOS AUTOMOBILÍSTICOS</P>
+      </div>
+    </div>
+ 
+    <div class="row">
+      <div class="column">
+        <img src="cartaz_carro.jpg" alt="Snow" style="width:100%" id="carro">
+        <p id="carrim"><a href="#" id="link"><button id="carrim">Automóveis</button></a></p>
+      </div>
+      <div class="column">
+        <img src="cartaz_moto.jpg" style="width:93.8%" id="moto">
+        <p id="carrim"><a href="#" id="link"><button id="carrim">Motocicletas</button></a></p>
+      </div>
+      <div class="column">
+        <img src="cartaz_bike.jpg" alt="Mountains" style="width:100%" id="bike">
+        <p id="carrim"><a href="#" id="link"><button id="carrim">Bicicletas</button></a></p>
+      </div>
+    </div> 
+
+<div>
+  <img 
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge" id="section-contato">
+  <img src="R.png" class="R" width="100px">
+  <p class="priv"><a href="file:///E:/projeto%20Kerlon/tela_privacidade.html" class="priv">•Política de privacidade</a></p>
+  <p class="priv"><a href="file:///E:/projeto%20Kerlon/termos_de_uso.html#" class="priv">•Termos de uso</a></p>
+  <p class="cont">•Contatos:</p>
+  <a href="#"> <i class="fa fa-instagram"></i></a><span>  <a href="#" id="rs">Instagram</a></span><br>
+  <br>
+  <a href="#"> <i class="fa fa-whatsapp"></i></a><span>  <a href="#" id="rs">Whatsapp</a></span><br>
+  <br>
+  <p class="email">•Email : rondaconcessionaria@gmail.com</p>
+  <br>
+  <p class="power">2023 © Ronda - Todos os direitos Reservados</p>
+  <br>
+</footer>
+
+<script>
+   let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+ slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+ dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script>
+
+<script>
+  let count = 1;
+  document.getElementById("radio1").checked = true;
+
+  setInterval( function(){
+    nextImage();
+  }, 3000)
+
+  function nextImage(){
+    count++;
+    if (count>3) {
+      count = 1;
+    }
+
+    document.getElementById("radio"+count).checked = true;
+
+  }
+</script>
+
+</body>
+</html>
