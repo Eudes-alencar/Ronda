@@ -1,0 +1,128 @@
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 10%;
+  margin-left: 50%;
+  margin-top: 10%;
+
+ 
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  margin-left: 50%;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+#h2{
+
+margin-top: 19%;
+margin-left: 53%;
+margin-bottom: 20%;
+font-size: 50px;
+margin-right: -25%;
+color: white;
+
+}
+
+#ronda{
+    height: 89px;
+    margin-left: 1%;
+    margin-top: -49%;
+    
+}
+
+#retangulo{
+    margin-top: -1%;
+    height: 1090px;
+    margin-bottom: -50%;
+    margin-left: 48%;
+}
+
+#p{
+    margin-left: 50%;
+    margin-right: -20%;
+    color: white;
+    
+}
+
+#a{
+    color: white;
+    text-decoration: none;
+    
+    
+}
+#a:hover{
+    color: deepskyblue;
+}
+#input-checkbox{
+    margin-left: 50%;
+    margin-right: -90%;
+}
+
+
+#text-terms{
+    margin-left: 54%;
+    margin-right: -58%;
+    margin-top: -4%;
+    margin-bottom: 10%;
+    color: white;
+}
+#anuncio{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+}
+
+#a{
+  text-decoration: none;
+  
+  
+}
+
+body{
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 55%;
+  
+   
+}
+
